@@ -217,6 +217,7 @@ h2{
 }
 
 
+
 /*RESPONSIVITY*/
 @media (max-width:1130px){
   .obdelnik{
@@ -274,5 +275,44 @@ h2{
     flex-direction: column;
   }
 
+}
+
+@media (max-width:1135px){
+  .obdelnik2 ul{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .obdelnik3{
+    position: relative;
+    background-color: #F5DBBA;
+    z-index: 1;
+    height: 100%;
+    margin: 25px 100px;
+    border-radius: 20px;
+  }
+}
+
+@media(max-width:1015px){
+  #kontejner{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    position: relative;
+    right: 20px;
+    border-radius: 20px;
+    height: 70%;
+    margin: 10px 5px;
+    width: 100%;
+    background-color: #ebc798;
+  }
+
+  #suroviny{
+    position: relative;
+    left:10%
+  }
 
 }
