@@ -1,0 +1,158 @@
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    position: relative;
+    top: 25%;
+    left: 30%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+}
+
+p, ol{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    margin: 10%;
+    padding: 5px;
+    color: rgb(28, 28, 28);
+}
+
+.pozadi{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+}
+  
+.pozadi img{
+    width: 100%;
+    height: 100%;
+}
+  
+.pozadizatmavene{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+}
+  
+.pozadizatmavene img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.65;
+}
+
+.kontejner {
+    position: relative;
+    height: 900px;
+    width: 70%;
+    background-color: rgb(239, 239, 239);
+    z-index: 4;
+    left: 15%;
+    border-radius: 10px;
+}
+
+.top div img{
+    left: 100%;
+    height: 200px;
+    width: 270px;
+    top: 20%;
+    position: relative;
+    margin: 0%;
+    z-index: 7;
+    border-radius: 10px;
+}
+
+.bottom{
+    display: flex;
+}
+
+.bottom1{
+    position: relative;
+    background-color: rgb(225, 225, 225);
+    height: 50%;
+    width: 40%;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+.bottom2{
+    top: 19%;
+    position: relative;
+    background-color: rgb(225, 225, 225);
+    height: 50%;
+    margin: 5%;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.bottom1:hover{
+    position: relative;
+    background-color: rgb(208, 208, 208);
+    height: 50%;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.bottom2:hover{
+    top: 19%;
+    position: relative;
+    background-color: rgb(208, 208, 208);
+    height: 50%;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.top{
+    display: flex;
+    top: 5%;
+    position: relative;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    background-color: rgb(225, 225, 225);
+}
+
+.kontejner p{
+    position: relative;
+    bottom: 10%;
+}
+
+.top:hover{
+    display: flex;
+    top: 5%;
+    position: relative;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    background-color: rgb(208, 208, 208);
+}
+
+#back{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+#back:hover{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #a8041da8;
+}
