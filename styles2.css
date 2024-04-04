@@ -178,6 +178,7 @@ p, ol{
     left: 20%;
 }
 
+/*resposivita*/
 @media (max-width:1450px){
     .top div img{
         display: none;
@@ -193,5 +194,61 @@ p, ol{
         z-index: 4;
         left: 5%;
         border-radius: 10px;
+    }
+}
+
+@media (max-width:650px){
+    h1{
+        position: relative;
+        top: 25%;
+        left: 15%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 60px;
+    }
+
+    .bottom1{
+        position: relative;
+        background-color: rgb(225, 225, 225);
+        height: 50%;
+        width: 40%;
+        border-radius: 10px;
+        margin: 5%;
+    }
+    
+    .bottom2{
+        top: 19%;
+        position: relative;
+        background-color: rgb(225, 225, 225);
+        height: 50%;
+        margin: 5%;
+        width: 40%;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:570px){
+    h1{
+        position: relative;
+        top: 25%;
+        left: 15%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 50px;
+    }
+}
+
+@media (max-width:590px){
+    .kontejner {
+        position: relative;
+        height: 120%;
+        width: 90%;
+        background-color: rgb(225, 225, 225);
+        z-index: 4;
+        left: 5%;
+        border-radius: 10px;
+    }
+
+    p{
+        position: relative;
+        top: 10px;
     }
 }

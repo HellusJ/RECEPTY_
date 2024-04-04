@@ -120,39 +120,37 @@ body{
 }
 
 .dolnibar{
-  align-items: center;
+  border-radius: 10px;
   position: relative;
+  z-index: 40;
   background-color: #F5DBBA;
-  z-index: 1;
-  height: 10%;
-  margin: 25px 350px;
-  border-radius: 20px;
+  width: 40%;
+  margin: 5% 30%;
 }
 
-.dolnibar ul{
+.dolnibar ul a li img{
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  margin: 50px;
-  list-style: none;
-  right: 10px;
-}
-
-.dolnibar ul li{
-  padding:40px;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
 }
 
 .dolnibar ul a li{
-  text-decoration: none;
-  color: black;
-  font-size: 15px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
+  list-style: none;
 }
 
-.dolnibar ul li:hover{
+.dolnibar ul a li:hover{
+  border-radius: 5px;
   background-color: #ebc798;
-  transition: 200ms;
-  border-radius: 10px;
+  width: 100%;
+  list-style: none;
+}
+
+.dolnibar ul{
+  align-items: center;
+  justify-content:space-around;
+  display: flex;
 }
 
 .obdelnik3 ul{
@@ -207,14 +205,6 @@ h2{
   font-size: 120%;
 }
 
-.obdelnik3 ol li{
-  position: relative;
-  right: 10%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-
 /*RESPONSIVITY*/
 @media (max-width:1130px){
   .obdelnik{
@@ -238,33 +228,22 @@ h2{
     display: flex;
     text-decoration: none;
     position: relative;
-    right: 20px;
+    right: 10px;
     border-radius: 20px;
     height: 70%;
-    margin: 10px 5px;
-    width: 100%;
+    margin: 10px 20px;
+    width: 95%;
     background-color: #ebc798;
-
   }
-}
 
-@media (max-width:1075px){
-  .dolnibar ul a li{
-    position: relative;
-    left: 10%;
+  .obdelnik3 ul li div img{
     text-decoration: none;
-    color: black;
-    font-size: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-
-  .dolnibar ul{
     position: relative;
-    display: flex;
-    margin: 40px;
-    list-style: none;
-    right: 10px;
-    flex-direction: column;
+    top: 2%;
+    border-radius: 20px;
+    height: 150px;
+    margin: 20px;
+    width: 202px;
   }
 
 }
@@ -285,6 +264,11 @@ h2{
     height: 100%;
     margin: 25px 100px;
     border-radius: 20px;
+  }
+
+  #GrHe{
+    position: relative;
+    left: 5%;
   }
 }
 
@@ -324,7 +308,7 @@ h2{
     position: relative;
     background-color: #F5DBBA;
     z-index: 1;
-    height: 600px;
+    height: 100%;
     margin: 25px 10px;
     border-radius: 20px;
     overflow-x: hidden;
@@ -342,33 +326,137 @@ h2{
     border-radius: 20px;
   }
 
-  .dolnibar ul{
-    position: relative;
+  
+}
+
+@media (max-width:1020px){
+  .obdelnik3 ul{
     display: flex;
-    margin: 10px;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
-    right: 200px;
   }
 
-  .dolnibar ul a li{
-    position: relative;
-    left: 5%;
+  .obdelnik3 ul li div img{
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 10px;
+    position: relative;
+    top: 2%;
+    left: 30%;
+    border-radius: 20px;
+    height: 150px;
+    margin: 20px;
+    width: 202px;
+  }
+
+  .obdelnik3 ul li a{
+    position: relative;
+    left: 35%;
+    top: 40%;
+    font-size: 160%;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+}
+
+@media (max-width:510px){
+  .obdelnik3 ul li div img{
+    text-decoration: none;
+    position: relative;
+    top: 2%;
+    left: 22%;
+    border-radius: 20px;
+    height: 150px;
+    margin: 20px;
+    width: 202px;
+  }
+
+  .obdelnik3 ul li a{
+    position: relative;
+    left: 25%;
+    top: 40%;
+    font-size: 160%;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+
+  .obdelnik3{
+    position: relative;
+    background-color: #F5DBBA;
+    z-index: 1;
+    height: 100%;
+    margin: 25px 10px;
+    border-radius: 20px;
+    overflow-x: hidden;
+  }
+
+  .obdelnik3 ul li h1{
+    position: relative;
+    left: 30%;
+    margin: 10px 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+}
 
-  .dolnibar ul li{
-    padding:10px;
-    width: 100px;
+@media (max-width:625px){
+  .obdelnik3 ul li div img{
+    text-decoration: none;
+    position: relative;
+    top: 2%;
+    left: 20%;
+    border-radius: 20px;
+    height: 150px;
+    margin: 20px;
+    width: 202px;
   }
 
-  .dolnibar ul li:hover{
-    background-color: #ebc798;
+  .obdelnik3 ul li a{
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 160%;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
-    transition: 200ms;
-    border-radius: 10px;
+    text-decoration: none;
   }
-
+  
+  .dolnibar{
+    border-radius: 10px;
+    position: relative;
+    z-index: 40;
+    background-color: #F5DBBA;
+    width: 40%;
+    margin: 5% 30%;
+  }
+  
+  .dolnibar ul a li img{
+    position: relative;
+    right: 40%;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+  }
+  
+  .dolnibar ul a li{
+    position: relative;
+    right: 0%;
+    width: 100%;
+    list-style: none;
+  }
+  
+  .dolnibar ul a li:hover{
+    border-radius: 5px;
+    background-color: #F5DBBA;
+    width: 100%;
+    list-style: none;
+  }
+  
+  .dolnibar ul{
+    flex-direction: column;
+    display: flex;
+  }
 }
