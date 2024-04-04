@@ -177,3 +177,21 @@ p, ol{
     position: relative;
     left: 20%;
 }
+
+@media (max-width:1450px){
+    .top div img{
+        display: none;
+    }
+}
+
+@media (max-width:780px){
+    .kontejner {
+        position: relative;
+        height: 120%;
+        width: 90%;
+        background-color: rgb(239, 239, 239);
+        z-index: 4;
+        left: 5%;
+        border-radius: 10px;
+    }
+}
